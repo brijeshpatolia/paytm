@@ -1,15 +1,15 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const userRoutes = require("../routes/userRoutes");
-const accountRoutes = require("../routes/accountRoutes");
+const userRoutes = require("./routes/userRoutes");
+const accountRoutes = require("./routes/accountRoutes");
 
 app.use(cors());
 
 app.use(express.json());
 require("dotenv").config();
 
-const dbConnect = require("../config/db");
+const dbConnect = require("./config/db");
 dbConnect();
 
 // Routes
