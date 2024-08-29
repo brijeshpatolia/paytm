@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create a new axios instance
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000/api/v1", // Set the base URL for all requests
+  baseURL: "https://paytmbackend.vercel.app", // Set the base URL for all requests
   headers: {
     "Content-Type": "application/json", // Default content type
   },
