@@ -1,5 +1,5 @@
 import { apiConnector } from "../apiConnector";
-const BASE_URL = "https://paytmbackend.vercel.app";
+const BASE_URL = "https://paytmserver-brijeshpatolias-projects.vercel.app/api/v1";
 
 export const signup = async (firstname, lastname, email, password) => {
   try {
